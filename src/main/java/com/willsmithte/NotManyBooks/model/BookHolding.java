@@ -1,6 +1,6 @@
 package com.willsmithte.NotManyBooks.model;
 
-import util.BookNotFoundException;
+import com.willsmithte.NotManyBooks.util.BookNotFoundException;
 
 import java.util.HashMap;
 

@@ -16,12 +16,17 @@ import static com.willsmithte.NotManyBooks.util.Consts.*;
 public class User {
 
     @Id
-    private ObjectId id;
-    private String name;
-    private String email;
-    private BookHolding books;
+    public ObjectId _id;
+    public String name;
+    public String email;
+    public BookHolding books;
 
-    public User(String name, String email) {
+    public User() {
+
+    }
+
+    public User(ObjectId _id, String name, String email) {
+        this._id = _id;
         this.name = name;
         this.email = email;
     }
@@ -31,20 +36,48 @@ public class User {
                 .append(EMAIL_FIELD, new BsonString(this.email));
     }
 
-    public String getId() {
-        return this.id.toHexString();
+    public String get_id() {
+        return this._id.toHexString();
+    }
+
+    public void set_id(ObjectId id) {
+        this._id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public BookHolding getBooks() {
+        return books;
+    }
+
+    public void setBooks(BookHolding books) {
+        this.books = books;
     }
 
     private void setId(BsonValue id) {
-        this.id = id.asObjectId().getValue();
+        this._id = id.asObjectId().getValue();
     }
 
-    public static User createAndInsert(MongoCollection<BsonDocument> db, String name, String email) {
-        User user = new User(name, email);
-        db.insertOne(user.makeBsonDoc());
-        BsonDocument document = db.find().sort(new BsonDocument("_id", new BsonInt32(-1))).first();
-        user.setId(document.get(ID_FIELD));
-        return user;
-    }
+//    public static User createAndInsert(MongoCollection<BsonDocument> db, String name, String email) {
+//        User user = new User(name, email);
+//        db.insertOne(user.makeBsonDoc());
+//        BsonDocument document = db.find().sort(new BsonDocument("_id", new BsonInt32(-1))).first();
+//        user.setId(document.get(ID_FIELD));
+//        return user;
+//    }
 
 }

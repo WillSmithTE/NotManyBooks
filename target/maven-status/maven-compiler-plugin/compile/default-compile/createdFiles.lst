@@ -1,0 +1,11 @@
+com/willsmithte/NotManyBooks/util/BookNotFoundException.class
+com/willsmithte/NotManyBooks/model/BookHolding.class
+com/willsmithte/NotManyBooks/model/Book.class
+com/willsmithte/NotManyBooks/util/Consts.class
+com/willsmithte/NotManyBooks/model/Location.class
+com/willsmithte/NotManyBooks/model/Listing.class
+com/willsmithte/NotManyBooks/controllers/UserController.class
+com/willsmithte/NotManyBooks/NotManyBooksApplication.class
+com/willsmithte/NotManyBooks/repositories/UserRepository.class
+com/willsmithte/NotManyBooks/model/User.class
+com/willsmithte/NotManyBooks/Main.class

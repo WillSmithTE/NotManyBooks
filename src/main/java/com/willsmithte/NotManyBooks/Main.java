@@ -3,7 +3,6 @@ package com.willsmithte.NotManyBooks;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import model.User;
 import org.bson.BsonDocument;
 
 import java.util.ArrayList;
@@ -21,11 +20,11 @@ public class Main {
             MongoClient mongoClient = new MongoClient();
             MongoDatabase db = mongoClient.getDatabase(DATABASE_NAME);
             MongoCollection<BsonDocument> users = db.getCollection("users", BsonDocument.class);
-            User user1 = User.createAndInsert(users, "dufus", "dufus@gmail.com");
+//            User user1 = User.createAndInsert(users, "dufus", "dufus@gmail.com");
             MongoCollection<BsonDocument> books = db.getCollection("books", BsonDocument.class);
             List<BsonDocument> list = new ArrayList<BsonDocument>();
-            list.add()
-            books.insertM;
+//            list.add()
+//            books.insertM;
             System.out.println("we good");
         } catch (Exception e) {
             System.out.println("bad: " + e.toString());

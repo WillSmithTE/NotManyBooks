@@ -1,0 +1,11 @@
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/NotManyBooksApplication.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/controllers/UserController.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/util/BookNotFoundException.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/model/User.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/repositories/UserRepository.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/util/Consts.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/Main.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/model/Book.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/model/BookHolding.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/model/Location.java
+/Users/elbershayz/IdeaProjects/NotManyBooks/src/main/java/com/willsmithte/NotManyBooks/model/Listing.java
