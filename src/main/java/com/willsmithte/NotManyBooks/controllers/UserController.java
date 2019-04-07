@@ -13,6 +13,7 @@ import java.util.List;
  * Created by Will Smith on 16/3/19.
  */
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/user")
 public class UserController {
